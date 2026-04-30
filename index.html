@@ -30,7 +30,7 @@
   <meta property="og:image" content="">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta property="og:image:alt" content="COIN">
   <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
   <meta property="article:author" content="Saki Hashimoto">
   <meta property="article:section" content="Research">
@@ -257,6 +257,7 @@
                 <a href="https://scholar.google.co.jp/citations?user=jtB7J0AAAAAJ&hl=ja&oi=ao" target="_blank">Akira Taniguchi</a><sup>2,1,*</sup>,</span>
               <span class="author-block">
                 <a href="https://scholar.google.co.jp/citations?user=KPxSCJUAAAAJ&hl=ja&oi=ao" target="_blank">Shoichi Hasegawa</a><sup>1</sup>,</span>
+              <br>
               <span class="author-block">
                 <a href="https://scholar.google.co.jp/citations?user=Y4qjYvMAAAAJ&hl=ja&oi=ao" target="_blank">Yoshinobu Hagiwara</a><sup>3,1</sup>,</span>
               <span class="author-block">
@@ -272,7 +273,7 @@
                       <sup>3</sup>Soka University
                       <sup>4</sup>Kyoto University
                       <br>
-                      <span class="publication-title">(Under Review)</span>
+                      <span class="publication-title">Under Review (Advanced Robotics)</span>
                     </span>
                     <!-- TODO: Remove this line if no equal contribution -->
                     <span class="eql-cntrb"><small><br><sup>*</sup></small>Corresponding Author</span>
@@ -359,7 +360,14 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Service robots must infer object ownership to correctly interpret instructions such as “bring me my cup.” 
+            However, ownership is a latent attribute that cannot be directly observed, and existing methods often rely on limited cues such as recent usage, making them unreliable in scenarios such as temporary sharing.
+            We propose a framework for context-aware ownership inference with uncertainty-guided interaction (COIN). 
+            The method integrates user background information and object usage history using a large language model (LLM) to estimate ownership scores. 
+            To handle uncertainty, we apply conformal prediction to construct a set of plausible owners and selectively generate user queries when the prediction is uncertain.
+            Experiments in a simulated home environment show that the proposed method consistently outperforms baseline approaches, achieving a Subset Accuracy of 0.988 and a Mean Jaccard index of 0.991. 
+            The method also maintains high performance in scenarios involving temporary use and shared ownership. 
+            The results demonstrate that combining contextual reasoning with uncertainty-aware interaction improves both estimation accuracy and robustness.
           </p>
         </div>
       </div>
